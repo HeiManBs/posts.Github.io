@@ -1,0 +1,36 @@
+{
+  "name": "freeshineit.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hexo generate && node nojekyll.js",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "nodemon -e yml,ejs --ignore public/ -L --exec 'hexo server'",
+    "dev": "nodemon -e yml,ejs --ignore public/ -L --exec 'hexo server'"
+  },
+  "hexo": {
+    "version": "6.3.0"
+  },
+  "dependencies": {
+    "hexo": "^6.3.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-searchdb": "^1.4.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-markdown-it-plus": "^1.0.6",
+    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-kong": "0.1.5",
+    "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "rimraf": "^4.1.2",
+    "shelljs": "^0.8.5"
+  }
+}
